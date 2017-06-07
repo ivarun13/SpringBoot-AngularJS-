@@ -1,0 +1,49 @@
+<div class="container">
+    <h1>Create New Customer</h1>
+
+    <form novalidate="novalidate" class="form-group" name="form">
+        
+            <label>Name:</label>
+            <div class="controls">
+                <input type="text" name="Name" ng-model="customer.name" required>
+            </div>
+            
+        
+        <div class="control-group">
+            <label class="control-label">email:</label>
+            <div class="controls">
+                <input type="email" name="Email" ng-model="customer.email" required/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" >telephone:</label>
+            <div class="controls">
+                <input type="text"  ng-model="customer.telephone" required/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">street:</label>
+            <div class="controls">
+                <input type="text" ng-model="customer.address.street" required/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" >state:</label>
+            <div class="controls">
+                <input type="text"  ng-model="customer.address.state" required/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" >zip:</label>
+            <div class="controls">
+                <input type="text" ng-model="customer.address.zip" required/>
+            </div>
+        </div>
+        <br>
+        <div class="control-group">
+            <div class="controls">
+                <button ng-click="createNewCustomer()" ng-disabled= "form.$invalid" class="btn btn-small btn-primary">create Customer</button>
+            </div>
+        </div>
+    </form>
+</div>

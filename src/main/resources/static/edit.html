@@ -1,0 +1,52 @@
+<div class="container">
+    <h1>Update Customer</h1>
+
+    <form novalidate="novalidate" class="form-horizontal" name="form">
+         <label>Name:</label>
+            <div class="controls">
+                <input type="text" name="Name" ng-model="customer.name">
+            </div>
+            
+        
+        <div class="control-group">
+            <label class="control-label" >email:</label>
+            <div class="controls">
+                <input type="email" name="Email" ng-model="customer.email"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" >telephone:</label>
+            <div class="controls">
+                <input type="text"  ng-model="customer.telephone" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" >street:</label>
+            <div class="controls">
+                <input type="text"  ng-model="customer.address.street" />
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" >state:</label>
+            <div class="controls">
+                <input type="text"  ng-model="customer.address.state"/>
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" >zip:</label>
+            <div class="controls">
+                <input type="text" ng-model="customer.address.zip" />
+            </div>
+        </div>
+        <br>
+        <div class="control-group">
+            <div class="controls">
+              
+                <a ng-click="cancel()" class="btn btn-small">cancel</a>
+                <button ng-click="updateCustomer()" class="btn btn-small btn-primary">Save</button>
+
+    
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,2 @@
+INSERT INTO customers (id,name,email,telephone,street,city,state,zip) VALUES (101,'varun','v@gmail.com','3235432233','611 s','alhambra','ca','91801');
+INSERT INTO customers (id,name,email,telephone,street,city,state,zip) VALUES (102,'jay','j@gmail.com','3235432233','611 s','alhambra','ca','91801');
